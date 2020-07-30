@@ -8,7 +8,8 @@ end
 
 #helper method to help me with #consolidated_cart
 def cart-counter-helper(grocery_item,customer_cart)
-  count = 1 # count to return at the end, it is assumed that there is already one of this item 
+  count = 1 # count to return at the end, it is assumed that there is already one of this item
+  binding.pry
   
   if customer_cart.include?(grocery_item)
     count += 1
@@ -38,7 +39,7 @@ def consolidate_cart(cart)
 
 end
 
-binding.pry
+
 
 
 
