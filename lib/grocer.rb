@@ -12,10 +12,8 @@ def cart_count_helper(grocery_item,customer_cart)
   
   if !customer_cart.one?(grocery_item)
     count += 1
-  else
-    count
   end
-  
+  count
 end
   
 def consolidate_cart(cart)
