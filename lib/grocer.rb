@@ -27,7 +27,7 @@ def consolidate_cart(cart)
   consolidated_cart = [] #here I will store my data and account for duplicates
   
   cart.each do |grocery_item|
-    count = cart-count-helper(grocery_item,cart)
+    count = cart_count_helper(grocery_item,cart)
     consolidated_cart << {
       :item => grocery_item[:item],
       :price => grocery_item[:price],
