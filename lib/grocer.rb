@@ -34,6 +34,7 @@ def consolidate_cart(cart)
       :clearance => grocery_item[:clearance],
       :count => count
     }
+    binding.pry
   end
 
 end
