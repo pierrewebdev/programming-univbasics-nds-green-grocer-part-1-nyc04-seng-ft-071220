@@ -38,6 +38,9 @@ def consolidate_cart(cart)
 
 end
 
+binding.pry
+0
+
 
 
   
