@@ -7,9 +7,8 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 #helper method to help me with #consolidated_cart
-def cart-counter-helper(grocery_item,customer_cart)
+def cart_count_helper(grocery_item,customer_cart)
   count = 1 # count to return at the end, it is assumed that there is already one of this item
-  binding.pry
   
   if customer_cart.include?(grocery_item)
     count += 1
@@ -28,7 +27,7 @@ def consolidate_cart(cart)
   consolidated_cart = [] #here I will store my data and account for duplicates
   
   cart.each do |grocery_item|
-    count = cart-counter-helper(grocery_item,cart)
+    count = cart-count-helper(grocery_item,cart)
     consolidated_cart << {
       :item => grocery_item[:item],
       :price => grocery_item[:price],
