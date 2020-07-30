@@ -10,7 +10,7 @@ end
 def cart_count_helper(grocery_item,customer_cart)
   count = 1 # count to return at the end, it is assumed that there is already one of this item
   
-  if customer_cart.one?(grocery_item)
+  if !customer_cart.one?(grocery_item)
     count += 1
   else
     count
